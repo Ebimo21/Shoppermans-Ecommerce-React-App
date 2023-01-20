@@ -29,8 +29,8 @@ function Cart(){
   return (
 
     <section style={{display:"flex", flexDirection: "column"}}>
-          <div style={{ position: "fixed", width: "100%", top: "0" }}>
-                <header>
+          <div style={{ position: "fixed", width: "100%", top: "0",  }}>
+                <header >
                     <Link to='/' style={{
                         color: "white",
                         textDecoration: "none"
@@ -56,7 +56,7 @@ function Cart(){
                 </header>
             </div>
       <div >
-        <div className='section-main'>
+        <div className='section-main' style={{ marginTop: "4em" }}>
          
         <div style={{display: "flex", alignItems:"center"}}>
           <Link to ="/" style={{textDecoration:"none",}}>
