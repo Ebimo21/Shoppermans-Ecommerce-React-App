@@ -10,8 +10,6 @@ import Payment from './components/Payment';
 function App() {
   return (
     <div className="App">
-      <NavBar style={{position:"absolute", top:0, alignSelf:'stretch', flex: 1, right:0, left:0 }}/>
-  
       
         <Routes>
             <Route path = "/" element={<Home />} />
