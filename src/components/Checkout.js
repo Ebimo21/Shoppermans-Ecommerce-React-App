@@ -96,11 +96,11 @@ function Checkout(props){
                         onChange={firstNameClick}
                         value={firstName} />
                 </label>
-                <div style={{display: "flex", justifyContent: "space-around", gap:"3em"}}>
+            
                 <label>  <br />
                     <h2 className="checkout-font">Cvv<span className="checkout-span">*</span></h2>
 
-                    <input className="input-box-box"
+                    <input className="input-box"
                         placeholder="cvv"
                         type="text"
                         onChange={lastNameClick}
@@ -112,7 +112,7 @@ function Checkout(props){
                 <label>  <br />
                     <h2 className="checkout-font">Card Expiry Date<span className="checkout-span">*</span></h2>
 
-                    <input className="input-box-box"
+                    <input className="input-box"
                         placeholder="Card Expiry Date"
                         type="text"
                         onChange={lastNameClick}
@@ -120,7 +120,7 @@ function Checkout(props){
                 
                 
                 </label> 
-                </div>
+            
             <br />
                 <label>
                     <h2 className="checkout-font">Password <span className="checkout-span">*</span></h2>
