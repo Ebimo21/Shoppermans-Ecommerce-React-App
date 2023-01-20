@@ -140,7 +140,8 @@
          color: white;
          width: 2.5em;
          height: 2.5em;
-         margin-right: 0.4em;
+         margin-right: 1em;
+         margin-left: 1em;
          border-radius: 0.3em;
          border: #0A71CF;
          font-size: 0.8em;
@@ -200,7 +201,8 @@
          width: 2.5em;
          height: 2.5em;
          font-size: 0.8em;
-         margin-right: 0.4em;
+         margin-right: 1em;
+         margin-left: 1em;
          border-radius: 0.3em;
          border: black;
      }
@@ -400,7 +402,8 @@
              color: white;
              width: 2.5em;
              height: 2.5em;
-             margin-right: 0.4em;
+             margin-right: 1em;
+             margin-left: 1em;
              border-radius: 0.3em;
              border: #0A71CF;
              font-size: 0.8em;
@@ -460,7 +463,8 @@
              width: 2.5em;
              height: 2.5em;
              font-size: 0.8em;
-             margin-right: 0.4em;
+             margin-right: 1em;
+             margin-left: 1em;
              border-radius: 0.3em;
              border: black;
          }
@@ -545,7 +549,7 @@
                 }
                 .div-cartt {
                     background-color: white;
-                    width: 20em;
+                    width: 22em;
                     margin-left: 1em;
                     padding: 1em;
                     margin-right: 0.6em;
@@ -555,7 +559,7 @@
                 
                 .div-cartt-two {
                     background-color: white;
-                    width: 20em;
+                    width: 22em;
                     margin-left: 1em;
                     padding: 1em;
                     height: 10.8em;
@@ -693,7 +697,8 @@
                     color: white;
                     width: 1.7em;
                     height: 1.7em;
-                    margin-right: 0.4em;
+                    margin-right: 1em;
+                    margin-left: 1em;
                     border-radius: 0.3em;
                     border: #0A71CF;
                     font-size: 0.8em;
@@ -711,6 +716,7 @@
                     gap: 0.3em;
                     font-size: 0.56em;
                     margin-right: 1em;
+                    margin-left: 1em;
                     border-radius: 0.3em;
                     padding: 0.1em 0.3em;
                 }
@@ -753,7 +759,8 @@
                     width: 1.7em;
                     height: 1.7em;
                     font-size: 0.8em;
-                    margin-right: 0.4em;
+                    margin-right: 1em;
+                    margin-left: 1em;
                     border-radius: 0.3em;
                     border: black;
                 }
@@ -953,7 +960,8 @@
                     color: white;
                     width: 2.5em;
                     height: 2.5em;
-                    margin-right: 0.4em;
+                    margin-right: 1em;
+                    margin-left: 1em;
                     border-radius: 0.3em;
                     border: #0A71CF;
                     font-size: 0.8em;
@@ -1013,7 +1021,8 @@
                     width: 2.5em;
                     height: 2.5em;
                     font-size: 0.8em;
-                    margin-right: 0.4em;
+                    margin-right: 1em;
+                    margin-left: 1em;
                     border-radius: 0.3em;
                     border: black;
                 }

@@ -152,6 +152,7 @@
         border: #0A71CF;
         font-size: 0.8em;
         float: right;
+        border-radius: 0.5em;
     }
     
     .cta-product:hover {
@@ -162,6 +163,7 @@
         border: black;
         font-size: 0.8em;
         float: right;
+        border-radius: 0.5em;
     }
     
     
@@ -225,6 +227,7 @@
 @media (min-width: 600px)and (max-width: 1280px) {
 
     .cta-product {
+        border-radius: 0.5em;
         width: 8.4em;
         padding: 0.5em 0.9em;
         background-color: #0A71CF;
@@ -238,6 +241,7 @@
         font-size: 0.7em
     }
     .cta-product:hover {
+        border-radius: 0.5em;
         width: 8.4em;
         padding: 0.5em 0.9em;
         background-color: black;
@@ -257,7 +261,7 @@
         display: grid;
         grid-template-columns: auto auto auto;
         grid-template-columns: auto auto auto;
-        gap: 0.2em;
+        gap: 0.6em;
         width: 100%;
         justify-content: center;
         align-items: center;
@@ -266,7 +270,8 @@
     .product-container {
         width: 11rem;
         height: 18rem;
-        margin-bottom: 0.3em;
+        margin-bottom: 0.6em;
+        margin-top: 0.6em;
         display: flex;
         justify-content: center;
         flex-direction: column;
@@ -362,6 +367,7 @@
 }
 
 .cta-product {
+    border-radius: 0.5em;
     width: 8.5em;
     height: 3.9em;
     padding: 0.5em 0.9em;
@@ -373,6 +379,7 @@
 }
 
 .cta-product:hover {
+    border-radius: 0.5em;
     width: 8.5em;
     height: 3.9em;
     padding: 0.5em 0.9em;
@@ -491,7 +498,7 @@
     .box-product {
         display: grid;
         grid-template-columns: auto auto;
-        gap: 0.3em;
+        gap: 0.6em;
         justify-content: center;
         align-items: center;
     }
@@ -610,6 +617,7 @@
 
 .cta-product {
     width: 7.9em;
+    border-radius: 0.5em;
     height: 3.4em;
     padding: 0.5em 0.9em;
     background-color: #0A71CF;
@@ -617,9 +625,12 @@
     border: #0A71CF;
     font-size: 0.7em;
     float: right;
+    border-radius: 0.5em;
 }
 
 .cta-product:hover {
+    border-radius: 0.5em;
+    border-radius: 0.5em;
     width: 7.9em;
     height: 3.4em;
     padding: 0.5em 0.9em;
@@ -726,7 +737,7 @@
     .box-product {
         display: grid;
         grid-template-columns: auto auto;
-        gap: 0.3em;
+        gap: 0.5em;
         justify-content: center;
         align-items: center;
     }
@@ -844,6 +855,7 @@
 }
 
 .cta-product {
+    border-radius: 0.5em;
     width: 7.9em;
     height: 3.4em;
     padding: 0.5em 0.9em;
@@ -855,6 +867,7 @@
 }
 
 .cta-product:hover {
+    border-radius: 0.5em;
     width: 7.9em;
     height: 3.4em;
     padding: 0.5em 0.9em;

@@ -172,6 +172,7 @@ function Home() {
                     })} 
             
             </div>
+            <br/>
             <div className='box-product'>
             {product.map((product, id) => {
                         return (
@@ -211,6 +212,7 @@ function Home() {
                     })} 
             
             </div>
+            <br/>
             <div className='box-product'>
             {product.map((product, id) => {
                         return (

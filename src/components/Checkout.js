@@ -80,13 +80,13 @@ function Checkout(props){
         <div className='div-cartt'>
         <div className="checkout-container">
             <div>
-                <h2 className='price'>CHECKOUT FLOW</h2>
+                <h2 className='price'>PAYMENT</h2>
             </div>
-            <div className="checkout-container-inside">
+            {/* <div className="checkout-container-inside">
                 <h4 className="checkout-container-font-this">Delivery</h4><span className="checkout-container-font"> - </span>
                 <h4 className="checkout-container-font">Summary </h4><span className="checkout-container-font"> - </span>
                 <h4 className="checkout-container-font">Payment</h4>
-            </div>
+            </div> */}
             <form style={{marginTop:"1em"}}>
                 <label>
                     <h2 className="checkout-font">Card Number<span className="checkout-span">*</span></h2>
@@ -96,7 +96,7 @@ function Checkout(props){
                         onChange={firstNameClick}
                         value={firstName} />
                 </label>
-                <div style={{display: "flex", justifyContent: "space-between"}}>
+                <div style={{display: "flex", justifyContent: "space-around", gap:"3em"}}>
                 <label>  <br />
                     <h2 className="checkout-font">Cvv<span className="checkout-span">*</span></h2>
 

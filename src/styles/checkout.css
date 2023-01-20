@@ -10,7 +10,7 @@
     }
    
     .input-box-box{
-        width: 90%;
+        width: 100%;
         height: 3.8em;
         color: black;
         border-radius: 0.4em;
@@ -92,7 +92,7 @@
     }
     
     .button-span{
-        width: 22em;
+        width: 100%;
         height: 2.8em;
         color: white;
         border-radius: 0.4em;
@@ -116,7 +116,7 @@
         align-items: center;
     }
     .button-span:hover{
-        width: 22em;
+        width: 100%;
         height: 2.8em;
         color: white;
         border-radius: 0.4em;
@@ -221,7 +221,7 @@
     }
     
     .button-span{
-        width: 22em;
+        width: 100%;
         height: 2.8em;
         color: white;
         border-radius: 0.4em;
@@ -233,7 +233,7 @@
         
     }
     .button-span:hover{
-        width: 22em;
+        width: 100%;
         height: 2.8em;
         color: white;
         border-radius: 0.4em;
@@ -355,7 +355,7 @@
     }
     
     .button-span{
-        width: 22em;
+        width: 100%;
         height: 2.8em;
         color: white;
         border-radius: 0.4em;
@@ -367,7 +367,7 @@
         
     }
     .button-span:hover{
-        width: 22em;
+        width: 100%;
         height: 2.8em;
         color: white;
         border-radius: 0.4em;
