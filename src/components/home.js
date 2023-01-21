@@ -245,10 +245,11 @@ function Home() {
                 </div>
                 <div className='last-footer'>
 
-                    <div>
-                        <h3 className='h-footer'>About Us</h3>
-                        <p className='h-para'> Terms and Conditions</p>
-                        <p className='h-para'>Privacy Notice</p>
+                    <div style={{textDecoration: "none"}}>
+                        <h3 className='h-footer'>Built By Ibeneme Ikenna Frontend Developer</h3>
+                        <a style={{textDecoration: "none", color:"white"}} href ="www.twitter.com/ibeneme_ikenna" ><h3 className='h-para'>His Twitter</h3> </a>
+                        <a style={{textDecoration: "none", color:"white"}} href ="mailto:ibenemeikenna96@gmail.com"><p className='h-para'> Send Him a Mail</p></a>
+                    
                     </div>
                     <div>
                         <h3 className='h-footer'>Make Money With Shoppermans</h3>

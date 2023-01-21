@@ -1,9 +1,7 @@
 
 
 
-
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=BioRhyme&display=swap');
 
 @media (min-width: 1200px) {
     .image-image{
@@ -701,30 +699,32 @@
                 .button-add {
                     background-color: #0A71CF;
                     color: white;
-                    width: 1.7em;
-                    height: 1.7em;
+                    width: 2.2em;
+                    height: 2.2em;
                     margin-right: 1em;
                     margin-left: 1em;
                     border-radius: 0.3em;
                     border: #0A71CF;
-                    font-size: 0.8em;
+                    font-size: 0.9em;
                 }
-                
+                .icon-remove{
+                    font-size: 1.1em;
+                }
                 .button-remove {
                     background-color: white;
                     color: red;
                     justify-content: center;
-                    width: 6em;
+                    width: 8em;
+                    height: 3em;
                     border: red 1px solid;
                     align-items: center;
-                    height: 2.6em;
                     display: flex;
                     gap: 0.3em;
-                    font-size: 0.56em;
+                    font-size: 0.7em;
                     margin-right: 1em;
                     margin-left: 1em;
                     border-radius: 0.3em;
-                    padding: 0.1em 0.3em;
+                    padding: 0.3em 0.5em;
                 }
                 
                 .div-left {
@@ -762,9 +762,9 @@
                 .button-add:hover {
                     background-color: black;
                     color: white;
-                    width: 1.7em;
-                    height: 1.7em;
-                    font-size: 0.8em;
+                    width: 2.2em;
+                    height: 2.2em;
+                    font-size: 0.9em;
                     margin-right: 1em;
                     margin-left: 1em;
                     border-radius: 0.3em;
@@ -773,18 +773,19 @@
                 
                 .button-remove:hover {
                     background-color: red;
-                    width: 6em;
+                    width: 8em;
+                    height: 3em;
                     align-items: center;
                     border: red;
                     justify-content: center;
                     color: white;
-                    height: 2.6em;
+
                     display: flex;
                     gap: 0.3em;
-                    font-size: 0.56em;
+                    font-size: 0.7em;
                     margin-right: 1em;
                     border-radius: 0.3em;
-                    padding: 0.1em 0.3em;
+                    padding: 0.3em 0.5em;
                 }
                 
                 .button-clear:hover {

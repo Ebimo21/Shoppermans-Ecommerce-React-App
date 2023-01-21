@@ -90,9 +90,9 @@ function Cart(){
                         {/* <p className='disc'>-{items.discount}</p> */}
                       </div>
                     </div>
-                    <div style={{ marginTop: "0.1em", marginBottom: "0.4em", display: "flex", justifyContent: "space-between", alignItems:"center"}}>
+                    <div style={{ marginTop: "1em", marginBottom: "0.4em", display: "flex", justifyContent: "space-between", alignItems:"center"}}>
                       <button className='button-remove'
-                        onClick={() => removeItem(items.id)}>         <RiDeleteBin5Line /> Remove</button>
+                        onClick={() => removeItem(items.id)}>         <RiDeleteBin5Line className="icon-remove"/> Remove</button>
                       <div style={{ display: "flex", gap: "1.2em", alignItems: "center", }}>
                         <button className='button-add'
                           onClick={() => updateItemQuantity(items.id, items.quantity - 1)}>-</button>

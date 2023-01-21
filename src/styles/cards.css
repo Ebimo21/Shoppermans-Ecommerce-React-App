@@ -1,11 +1,26 @@
 
 
-
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=BioRhyme&display=swap');
 
 
 @media (min-width: 1270px) {
-
+    .div-hero-first-first {
+        background: url(../components/images/pexels-antony-trivet-9980391\ 2.png);
+        background-position: center;
+        height: 18.5rem;
+        width: 100%;
+        display: flex;
+        margin-top: 01em;
+        align-items: center;
+        justify-content: center;
+        animation: slide 15s infinite;
+        animation-delay: 2s;
+        
+    
+    }
+    .div-first {
+        display: none;
+    }
     .div-first-flex {
         display: flex;
         background: white;
@@ -52,8 +67,8 @@
         background: url(../components/images/pexels-antony-trivet-9980391\ 2.png);
         background-position: center;
         height: 18.5rem;
-        width: 60.5rem;
-        display: flex;
+        width: 69.5rem;
+        display: none;
         margin-top: -0.1em;
         align-items: center;
         justify-content: center;

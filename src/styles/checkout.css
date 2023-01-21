@@ -13,8 +13,45 @@
         
     }
    
+.div-cartta-two-two{
+    width: 19em;
+    background-color: white;
+    padding: 2em;
+    height: 11em;
+    margin-right: 01.2em;
+}
+.div-cartta{
+    width: 32em;
+    background-color: white;
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
+label{
+    margin-top: 2em;
+}
+  
+.button-span{
+    width: 100%;
+    height: 2.8em;
+    color: white;
+    border-radius: 0.4em;
+    margin-top: 2.2em;
+    background-color: #0A71CF;
+    border: #0A71CF;
+    box-shadow: 10px 10px;
 
-
+    
+}  .button-span:hover{
+    width: 100%;
+    height: 2.8em;
+    color: white;
+    border-radius: 0.4em;
+    margin-top: 2.2em;
+    background-color: black;
+    border: black;
+    
+    
+}
     .checkout-container-inside{
         display: flex;
         flex-direction: row;
@@ -86,19 +123,7 @@
         font-size: 0.56em;
         border: 1px solid black; 
     }
-    
-    .button-span{
-        width: 100%;
-        height: 2.8em;
-        color: white;
-        border-radius: 0.4em;
-        margin-top: 2.2em;
-        background-color: #0A71CF;
-        border: #0A71CF;
-        box-shadow: 10px 10px;
-    
-        
-    }
+  
     .div-cartt-two-two {
         background-color: white;
         width: 27em;
@@ -111,17 +136,7 @@
     .section-main{
         align-items: center;
     }
-    .button-span:hover{
-        width: 100%;
-        height: 2.8em;
-        color: white;
-        border-radius: 0.4em;
-        margin-top: 2.2em;
-        background-color: black;
-        border: black;
-        
-        
-    }
+  
 }
 @media (max-width: 500px){
     .checkout-container{
@@ -135,7 +150,51 @@
     }
     
 
-
+    .div-cartta-two-two{
+        width: 21em;
+        background-color: white;
+        padding: 2em;
+        height: 11em;
+        margin-bottom: 0.9em;
+    }
+    .div-cartta{
+        width: 21em;
+        background-color: white;
+        padding-top: 2em;
+        padding-bottom: 4em;
+    }
+    label{
+        margin-top: 2em;
+    }
+    .input-box{
+        width: 21em;
+        height: 2.5em;
+        padding-left: 1.2em;
+        
+    }
+    .button-span{
+        width: 100%;
+        height: 3.2em;
+        color: white;
+        border-radius: 0.4em;
+        margin-top: 2.2em;
+        background-color: #0A71CF;
+        border: #0A71CF;
+        box-shadow: 10px 10px;
+    
+        
+    }
+    .button-span:hover{
+        width: 100%;
+        height: 3.2em;
+        color: white;
+        border-radius: 0.4em;
+        margin-top: 2.2em;
+        background-color: black;
+        border: black;
+        
+        
+    }
     .checkout-container-inside{
         display: flex;
         flex-direction: row;
@@ -197,40 +256,7 @@
         font-size: 0.6em;
         color: red;
     }
-    .input-box{
-        width: 25em;
-        height: 3.8em;
-        color: black;
-        border-radius: 0.4em;
-        margin-bottom: 0.5em;
-        padding-left: 1.3em;
-        font-size: 0.56em;
-        border: 1px solid black; 
-    }
-    
-    .button-span{
-        width: 100%;
-        height: 3.2em;
-        color: white;
-        border-radius: 0.4em;
-        margin-top: 2.2em;
-        background-color: #0A71CF;
-        border: #0A71CF;
-        box-shadow: 10px 10px;
-    
-        
-    }
-    .button-span:hover{
-        width: 100%;
-        height: 3.2em;
-        color: white;
-        border-radius: 0.4em;
-        margin-top: 2.2em;
-        background-color: black;
-        border: black;
-        
-        
-    }
+ 
     
     .radio-box{
         width: 20em;
@@ -260,8 +286,52 @@
         
     }
    
-
-
+    .div-cartta-two-two{
+        width: 28em;
+        background-color: white;
+        padding: 2em;
+        height: 11em;
+        margin-bottom: 0.9em;
+    }
+    .div-cartta{
+        width: 28em;
+        background-color: white;
+        padding-top: 2em;
+        padding-bottom: 4em;
+    }
+    label{
+        margin-top: 2em;
+    }
+    .input-box{
+        margin-top: 0.2em;
+        width: 29em;
+        height: 2.5em;
+        padding-left: 1.2em;
+        
+    }
+    .button-span{
+        width: 100%;
+        height: 3.2em;
+        color: white;
+        border-radius: 0.4em;
+        margin-top: 2.2em;
+        background-color: #0A71CF;
+        border: #0A71CF;
+        box-shadow: 10px 10px;
+    
+        
+    }
+    .button-span:hover{
+        width: 100%;
+        height: 3.2em;
+        color: white;
+        border-radius: 0.4em;
+        margin-top: 2.2em;
+        background-color: black;
+        border: black;
+        
+        
+    }
     .checkout-container-inside{
         display: flex;
         flex-direction: row;
@@ -323,40 +393,8 @@
         font-size: 0.6em;
         color: red;
     }
-    .input-box{
-        width: 32em;
-        height: 3.8em;
-        color: black;
-        border-radius: 0.4em;
-        margin-bottom: 0.5em;
-        padding-left: 1.3em;
-        font-size: 0.56em;
-        border: 1px solid black; 
-    }
+
     
-    .button-span{
-        width: 100%;
-        height: 2.8em;
-        color: white;
-        border-radius: 0.4em;
-        margin-top: 2.2em;
-        background-color: #0A71CF;
-        border: #0A71CF;
-        box-shadow: 10px 10px;
-    
-        
-    }
-    .button-span:hover{
-        width: 100%;
-        height: 2.8em;
-        color: white;
-        border-radius: 0.4em;
-        margin-top: 2.2em;
-        background-color: black;
-        border: black;
-        
-        
-    }
     
     .radio-box{
         width: 20em;

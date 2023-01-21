@@ -9,7 +9,7 @@ import { Link } from 'react-router-dom';
 import { useState } from 'react';
 
 
-function Checkout(props){
+function Checkout(){
 
   const {
     cartTotal,
@@ -18,27 +18,21 @@ function Checkout(props){
   } = useCart()
 
 
-  const { firstName, setFirstName } = useState([])
-  const { lastName, setLastName } = useState([])
-  const { addRess, setAddress } = useState([])
+  const [ cardNumber, setCardNumber ] = useState(" ")
+  const [ cvvName, setCvvName ] = useState(" ")
+  const [ expiryDate, setExpiryDate ] = useState(" ")
+  const [ inputPassword, setPassword ] = useState(" ")
 
-  function firstNameClick(e) {
-      setFirstName(e.target.value)
-  }
+  
 
-  function lastNameClick(e) {
-      setLastName(e.target.value)
-  }
 
-  function addressClick(e) {
-      setAddress(e.target.value)
-  }
 
   function submitNext(e) {
 
-      setFirstName(firstName)
-      setLastName(lastName)
-      setAddress(addRess)
+      setCardNumber(cardNumber)
+      setCvvName(cvvName)
+      setExpiryDate(expiryDate)
+      setPassword(inputPassword)
       e.preventDefault()
   }
 
@@ -64,12 +58,12 @@ function Checkout(props){
         
         </div>
         <div className='sect-main-main'>
-         <div className='div-cartt-two-two'>
+         <div className='div-cartta-two-two'>
           <div>
-            <h2 className='price'>CART SUMMARY</h2>
+            <h2 className='price'>CART SUMMARY {setCardNumber}</h2>
           </div>
           <div className='spread-cart-one'>
-            <p>Checkout Total</p>
+            <p style={{fontSize:"0.8em"}}>Checkout Total</p>
             <h2 className='total-price'>${cartTotal}</h2>
           </div>
           <div>
@@ -77,34 +71,36 @@ function Checkout(props){
 
           </div>
         </div>
-        <div className='div-cartt'>
+        <div className='div-cartta'>
         <div className="checkout-container">
             <div>
                 <h2 className='price'>PAYMENT</h2>
             </div>
-            {/* <div className="checkout-container-inside">
+           <div className="checkout-container-inside">
                 <h4 className="checkout-container-font-this">Delivery</h4><span className="checkout-container-font"> - </span>
                 <h4 className="checkout-container-font">Summary </h4><span className="checkout-container-font"> - </span>
                 <h4 className="checkout-container-font">Payment</h4>
-            </div> */}
+            </div> 
             <form style={{marginTop:"1em"}}>
                 <label>
                     <h2 className="checkout-font">Card Number<span className="checkout-span">*</span></h2>
-                    <input className="input-box"
+                    <input 
+                    style={{marginBottom:"2em"}} 
+                    className="input-box"
                         placeholder="12 Digits Card Number"
                         type="text"
-                        onChange={firstNameClick}
-                        value={firstName} required />
+                        onChange={(e)=>{setCardNumber(e.target.value)}}
+                        value={cardNumber} required />
                 </label>
             
                 <label>  <br />
                     <h2 className="checkout-font">Cvv<span className="checkout-span">*</span></h2>
 
-                    <input className="input-box"
+                    <input style={{marginBottom:"2em"}} className="input-box"
                         placeholder="cvv"
                         type="text"
-                        onChange={lastNameClick}
-                        value={lastName} required/>
+                        onChange={(e)=>{setCvvName(e.target.value)}}
+                        value={cvvName} required/>
                 
                 
                 </label> 
@@ -112,11 +108,11 @@ function Checkout(props){
                 <label>  <br />
                     <h2 className="checkout-font">Card Expiry Date<span className="checkout-span">*</span></h2>
 
-                    <input className="input-box"
+                    <input style={{marginBottom:"2em"}} className="input-box"
                         placeholder="Card Expiry Date"
                         type="text"
-                        onChange={lastNameClick}
-                        value={lastName} required/>
+                        onChange={(e)=>{setExpiryDate(e.target.value)}}
+                        value={expiryDate} required/>
                 
                 
                 </label> 
@@ -125,11 +121,11 @@ function Checkout(props){
                 <label>
                     <h2 className="checkout-font">Password <span className="checkout-span">*</span></h2>
 
-                    <input className="input-box"
+                    <input style={{marginBottom:"2em"}} className="input-box"
                         type="password"
                         placeholder="Enter your Password"
-                        onChange={addressClick}
-                        value={addRess} required/>
+                        onChange={(e)=>{setPassword(e.target.value)}}
+                        value={inputPassword} required/>
                 </label>  <br />
 
                 
@@ -138,7 +134,7 @@ function Checkout(props){
                 
 
             </form>
-            <h2>{firstName}{lastName}{addRess}</h2>
+            
         </div>
 
         </div>
