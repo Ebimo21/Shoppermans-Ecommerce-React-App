@@ -4,7 +4,7 @@ import '../styles/cards.css'
 
 
 const ProductCard = (props)=>{
-  let { specs, name, image, price, discount } = props.data
+  let { specs, name, image, price } = props.data
 
   const { addItem } = useCart([])
 
