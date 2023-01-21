@@ -69,11 +69,11 @@ function Checkout(){
             <div>
                 <h2 className='price'>PAYMENT</h2>
             </div>
-           <div className="checkout-container-inside">
+           {/* <div className="checkout-container-inside">
                 <h4 className="checkout-container-font-this">Delivery</h4><span className="checkout-container-font"> - </span>
                 <h4 className="checkout-container-font">Summary </h4><span className="checkout-container-font"> - </span>
                 <h4 className="checkout-container-font">Payment</h4>
-            </div> 
+            </div>  */}
             <form onSubmit= { submitButton }  style={{marginTop:"1em"}}>
                 <label>
                     <h2 className="checkout-font">First Name<span className="checkout-span">*</span></h2>
