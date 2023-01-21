@@ -127,7 +127,7 @@ label{
         width: 48em;
         height: 6em;
         color: black;
-        padding-top: 1em;
+        
         border-radius: 0.4em;
         margin-bottom: 0.5em;
         padding-left: 1.3em;
@@ -177,7 +177,7 @@ label{
         margin-top: 2em;
     }
     .input-box{
-        width: 24.6em;
+        width: 100%;
         height: 2.5em;
         padding-left: 1.2em;
         
