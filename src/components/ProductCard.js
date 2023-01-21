@@ -13,7 +13,7 @@ const ProductCard = (props)=>{
   }
   return (
     <div className='box-product'> 
-      <div className="product-container">
+      <div className="product-container" style={{alignItems:"center"}}>
         <img className="image" src={image} alt ={name}/>
         <p className="product-discount">{discount}</p>
         <div className="contain">
