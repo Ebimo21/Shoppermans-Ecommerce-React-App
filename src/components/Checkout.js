@@ -94,7 +94,7 @@ function Checkout(props){
                         placeholder="12 Digits Card Number"
                         type="text"
                         onChange={firstNameClick}
-                        value={firstName} />
+                        value={firstName} required />
                 </label>
             
                 <label>  <br />
@@ -104,7 +104,7 @@ function Checkout(props){
                         placeholder="cvv"
                         type="text"
                         onChange={lastNameClick}
-                        value={lastName} />
+                        value={lastName} required/>
                 
                 
                 </label> 
@@ -116,7 +116,7 @@ function Checkout(props){
                         placeholder="Card Expiry Date"
                         type="text"
                         onChange={lastNameClick}
-                        value={lastName} />
+                        value={lastName} required/>
                 
                 
                 </label> 
@@ -129,7 +129,7 @@ function Checkout(props){
                         type="password"
                         placeholder="Enter your Password"
                         onChange={addressClick}
-                        value={addRess} />
+                        value={addRess} required/>
                 </label>  <br />
 
                 
