@@ -123,7 +123,17 @@ label{
         font-size: 0.56em;
         border: 1px solid black; 
     }
-  
+    .input-box-this{
+        width: 48em;
+        height: 6em;
+        color: black;
+        padding-top: 1em;
+        border-radius: 0.4em;
+        margin-bottom: 0.5em;
+        padding-left: 1.3em;
+        font-size: 0.56em;
+        border: 1px solid black; 
+    }
     .div-cartt-two-two {
         background-color: white;
         width: 27em;
@@ -151,14 +161,14 @@ label{
     
 
     .div-cartta-two-two{
-        width: 21em;
+        width: 22em;
         background-color: white;
         padding: 2em;
         height: 11em;
         margin-bottom: 0.9em;
     }
     .div-cartta{
-        width: 21em;
+        width: 22em;
         background-color: white;
         padding-top: 2em;
         padding-bottom: 4em;
@@ -167,10 +177,21 @@ label{
         margin-top: 2em;
     }
     .input-box{
-        width: 21em;
+        width: 24.6em;
         height: 2.5em;
         padding-left: 1.2em;
         
+    }
+    .input-box-this{
+        width: 36.8em;
+        height: 6em;
+        color: black;
+        padding-top: 1em;
+        border-radius: 0.4em;
+        margin-bottom: 0.5em;
+        padding-left: 1.3em;
+        font-size: 0.56em;
+        border: 1px solid black; 
     }
     .button-span{
         width: 100%;
@@ -308,6 +329,17 @@ label{
         height: 2.5em;
         padding-left: 1.2em;
         
+    }
+    .input-box-this{
+        width: 43.3em;
+        height: 6em;
+        color: black;
+        border-radius: 0.4em;
+        margin-bottom: 0.5em;
+        padding-left: 1.3em;
+        font-size: 0.56em;
+        border: 1px solid black; 
+        padding-top: 1em;
     }
     .button-span{
         width: 100%;

@@ -9,23 +9,28 @@ import { Link } from 'react-router-dom';
 import { useState } from 'react';
 
 
-function Checkout(){
+function CheckoutDetails(){
 
   const {
     cartTotal,
   } = useCart()
+ 
+
+  const [ cardNumber, setCardNumber ] = useState("")
+  const [ cvvName, setCvvName ] = useState("")
+  const [ expiryDate, setExpiryDate ] = useState("")
+  const [ inputPassword, setPassword ] = useState("")
+
+  
 
 
-  const [ deliveryAddress, setdeliveryAddress ] = useState("")
-  const [ firstName, setFirstName ] = useState("")
-  const [ lastName, setLastName ] = useState("")
 
+  function submitNext(e) {
 
-
-  function submitButton(e){
-    setdeliveryAddress(deliveryAddress)
-    setFirstName(firstName)
-    setLastName(lastName)
+      setCardNumber(cardNumber)
+      setCvvName(cvvName)
+      setExpiryDate(expiryDate)
+      setPassword(inputPassword)
       e.preventDefault()
   }
 
@@ -53,7 +58,7 @@ function Checkout(){
         <div className='sect-main-main'>
          <div className='div-cartta-two-two'>
           <div>
-            <h2 className='price'>CART SUMMARY</h2>
+            <h2 className='price'>CART SUMMARY </h2>
           </div>
           <div className='spread-cart-one'>
             <p style={{fontSize:"0.8em"}}>Checkout Total</p>
@@ -74,49 +79,56 @@ function Checkout(){
                 <h4 className="checkout-container-font">Summary </h4><span className="checkout-container-font"> - </span>
                 <h4 className="checkout-container-font">Payment</h4>
             </div> 
-            <form onSubmit= { submitButton }  style={{marginTop:"1em"}}>
+            <form style={{marginTop:"1em"}}>
                 <label>
-                    <h2 className="checkout-font">First Name<span className="checkout-span">*</span></h2>
+                    <h2 className="checkout-font">Card Number<span className="checkout-span">*</span></h2>
                     <input 
                     style={{marginBottom:"2em"}} 
                     className="input-box"
-                        placeholder="Enter your First Name"
+                        placeholder="12 Digits Card Number"
                         type="text"
-                        onChange={(e)=>{setFirstName(e.target.value)}}
-                        value={firstName} required />
+                        onChange={(e)=>{setCardNumber(e.target.value)}}
+                        value={cardNumber} required />
                 </label>
             
                 <label>  <br />
-                    <h2 className="checkout-font">Last Name<span className="checkout-span">*</span></h2>
+                    <h2 className="checkout-font">Cvv<span className="checkout-span">*</span></h2>
 
                     <input style={{marginBottom:"2em"}} className="input-box"
-                        placeholder="Enter your Last Name"
+                        placeholder="cvv"
                         type="text"
-                        onChange={(e)=>{setLastName(e.target.value)}}
-                        value={lastName} required/>
+                        onChange={(e)=>{setCvvName(e.target.value)}}
+                        value={cvvName} required/>
                 
                 
                 </label> 
 
                 <label>  <br />
-                    <h2 className="checkout-font">Delivery Address <span className="checkout-span">*</span></h2>
+                    <h2 className="checkout-font">Card Expiry Date<span className="checkout-span">*</span></h2>
 
-                    <textarea style={{marginBottom:"2em"}} className="input-box-this"
-                        placeholder =  "Enter your Delivery Address"
+                    <input style={{marginBottom:"2em"}} className="input-box"
+                        placeholder =  "Card Expiry Date"
                         type="text"
-                        onChange={(e)=>{setdeliveryAddress(e.target.value)}}
-                        value={deliveryAddress} required>
-                </textarea>
+                        onChange={(e)=>{setExpiryDate(e.target.value)}}
+                        value={expiryDate} required/>
+                
                 
                 </label> 
             
             <br />
+                <label>
+                    <h2 className="checkout-font">Password <span className="checkout-span">*</span></h2>
 
-                {/* <Link to = "/details" > */}
-                    <button className="button-span">Next
-                        </button>
-                {/* </Link> */}
-                    
+                    <input style={{marginBottom:"2em"}} className="input-box"
+                        type="password"
+                        placeholder="Enter your Password"
+                        onChange={(e)=>{setPassword(e.target.value)}}
+                        value={inputPassword} required/>
+                </label>  <br />
+
+                
+                    <button onClick={submitNext} className="button-span">Next
+                    </button>
                 
 
             </form>
@@ -170,4 +182,4 @@ function Checkout(){
 
     
 }
-export default Checkout
+export default CheckoutDetails
