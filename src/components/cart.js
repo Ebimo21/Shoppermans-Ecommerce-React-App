@@ -24,8 +24,8 @@ function Cart(){
   } = useCart()
 
 
-  if (Cart === isEmpthy)
-    return (<h3>Your Cart is Empty</h3>)
+  if (Cart === isEmpthy){
+    return (<h3>Your Cart is Empty</h3>)}
   return (
 
     <section style={{display:"flex", flexDirection: "column"}}>
@@ -162,7 +162,7 @@ function Cart(){
             </div>
     </section>
 
-  )
-}
+  )} 
+
 
 export default Cart;

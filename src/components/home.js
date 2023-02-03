@@ -20,7 +20,7 @@ function Home() {
             id: 5,
             image: "https://www-konga-com-res.cloudinary.com/w_auto,f_auto,fl_lossy,dpr_auto,q_auto/media/catalog/product/G/K/204627_1665006860.jpg",
             name: "Hublot",
-            price: "4500",
+            price: "213",
             discount: "20% off",
             specs: "Available in Brown, Yellow and red Colors"
         },
@@ -28,7 +28,7 @@ function Home() {
             id: 6,
             image: "https://www-konga-com-res.cloudinary.com/w_auto,f_auto,fl_lossy,dpr_auto,q_auto/media/catalog/product/U/O/2117_1665065970.jpg",
             name: "Kimono Swatch",
-            price: "6500",
+            price: "310",
             discount: "20% off",
             specs: "Available in Brown, Yellow and red Colors"
         },
@@ -36,7 +36,7 @@ function Home() {
             id: 3,
             image: "https://www-konga-com-res.cloudinary.com/w_auto,f_auto,fl_lossy,dpr_auto,q_auto/media/catalog/product/X/D/67343_1634561716.jpg",
             name: "Diamond Cut",
-            price: "2100",
+            price: "210",
             discount: "20% off",
             specs: "Available in Brown, Yellow and red Colors"
         },
@@ -44,7 +44,7 @@ function Home() {
             id: 4,
             image: "https://www-konga-com-res.cloudinary.com/w_auto,f_auto,fl_lossy,dpr_auto,q_auto/media/catalog/product/M/u/Multifunction-Chronograph-Analog-Digital-Sports-Watch--Black-8008886.jpg",
             name: "Casio",
-            price: "1200",
+            price: "160",
             discount: "20% off",
             specs: "Available in Brown, Yellow and red Colors"
         },
@@ -52,7 +52,7 @@ function Home() {
             id: 5,
             image: "https://www-konga-com-res.cloudinary.com/w_auto,f_auto,fl_lossy,dpr_auto,q_auto/media/catalog/product/S/R/189377_1656609424.jpg",
             name: "Block",
-            price: "1200",
+            price: "120",
             discount: "20% off",
             specs: "Available in Brown, Yellow and red Colors"
         },
@@ -60,7 +60,7 @@ function Home() {
             id: 11,
             image: "https://www-konga-com-res.cloudinary.com/w_auto,f_auto,fl_lossy,dpr_auto,q_auto/media/catalog/product/M/u/Multifunction-Chronograph-Analog-Digital-Sports-Watch--Black-8008886.jpg",
             name: "Casio",
-            price: "1200",
+            price: "200",
             discount: "20% off",
             specs: "Available in Brown, Yellow and red Colors"
         },

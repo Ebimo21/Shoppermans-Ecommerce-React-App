@@ -7,10 +7,11 @@ import { useCart } from 'react-use-cart'
 import '../styles/cart.css'
 import { Link } from 'react-router-dom';
 import { useState } from 'react';
-
+import { useNavigate } from 'react-router-dom';
 
 function Checkout(){
-
+  let navigate = useNavigate()
+  
   const {
     cartTotal,
   } = useCart()
@@ -27,6 +28,8 @@ function Checkout(){
     setFirstName(firstName)
     setLastName(lastName)
       e.preventDefault()
+      navigate('/details')
+
   }
 
 
@@ -69,6 +72,10 @@ function Checkout(){
             <div>
                 <h2 className='price'>PAYMENT</h2>
             </div>
+            <div className="checkout-container-inside">
+                <h4 className="checkout-container-font-this">Delivery</h4><span className="checkout-container-font"> - </span>
+                <h4 className="checkout-container-font"> Payment</h4>
+            </div> 
            {/* <div className="checkout-container-inside">
                 <h4 className="checkout-container-font-this">Delivery</h4><span className="checkout-container-font"> - </span>
                 <h4 className="checkout-container-font">Summary </h4><span className="checkout-container-font"> - </span>

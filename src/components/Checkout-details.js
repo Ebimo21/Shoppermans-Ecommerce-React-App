@@ -7,10 +7,15 @@ import { useCart } from 'react-use-cart'
 import '../styles/cart.css'
 import { Link } from 'react-router-dom';
 import { useState } from 'react';
+import { useFormik } from "formik"
+import { useNavigate } from 'react-router-dom';
+import "../styles/checkout.css"
 
+
+ 
 
 function CheckoutDetails(){
-
+ let navigate = useNavigate()
   const {
     cartTotal,
   } = useCart()
@@ -22,7 +27,14 @@ function CheckoutDetails(){
   const [ inputPassword, setPassword ] = useState("")
 
   
-
+  const { values, handleChange} = useFormik({
+    initialValues: {
+      firstName:"",
+      lastName:"",
+      deliveryAddress:"",
+    }, 
+    
+  })
 
 
   function submitNext(e) {
@@ -32,6 +44,7 @@ function CheckoutDetails(){
       setExpiryDate(expiryDate)
       setPassword(inputPassword)
       e.preventDefault()
+      navigate('/success')
   }
 
 
@@ -75,11 +88,10 @@ function CheckoutDetails(){
                 <h2 className='price'>PAYMENT</h2>
             </div>
            <div className="checkout-container-inside">
-                <h4 className="checkout-container-font-this">Delivery</h4><span className="checkout-container-font"> - </span>
-                <h4 className="checkout-container-font">Summary </h4><span className="checkout-container-font"> - </span>
-                <h4 className="checkout-container-font">Payment</h4>
+                <h4 className="checkout-container-font">Delivery</h4><span className="checkout-container-font"> - </span>
+                <h4 className="checkout-container-font-this"> Payment</h4>
             </div> 
-            <form style={{marginTop:"1em"}}>
+            <form onSubmit= { submitNext }  style={{marginTop:"1em"}}>
                 <label>
                     <h2 className="checkout-font">Card Number<span className="checkout-span">*</span></h2>
                     <input 
@@ -87,18 +99,21 @@ function CheckoutDetails(){
                     className="input-box"
                         placeholder="12 Digits Card Number"
                         type="text"
-                        onChange={(e)=>{setCardNumber(e.target.value)}}
-                        value={cardNumber} required />
+                        id ="cardNumber"
+                        onChange={handleChange}
+                        value={values.cardNumber}  required />
                 </label>
             
                 <label>  <br />
                     <h2 className="checkout-font">Cvv<span className="checkout-span">*</span></h2>
 
-                    <input style={{marginBottom:"2em"}} className="input-box"
+                    <input style={{marginBottom:"2em"}} className="input-box" 
                         placeholder="cvv"
                         type="text"
-                        onChange={(e)=>{setCvvName(e.target.value)}}
-                        value={cvvName} required/>
+                        id ="cvv"
+                      onChange={handleChange}
+                      value={values.cvvName}  required />
+ 
                 
                 
                 </label> 
@@ -109,8 +124,9 @@ function CheckoutDetails(){
                     <input style={{marginBottom:"2em"}} className="input-box"
                         placeholder =  "Card Expiry Date"
                         type="text"
-                        onChange={(e)=>{setExpiryDate(e.target.value)}}
-                        value={expiryDate} required/>
+                        id ="expiry"
+                        onChange={handleChange}
+                        value={values.expiryDate}  required/>
                 
                 
                 </label> 
@@ -122,12 +138,13 @@ function CheckoutDetails(){
                     <input style={{marginBottom:"2em"}} className="input-box"
                         type="password"
                         placeholder="Enter your Password"
-                        onChange={(e)=>{setPassword(e.target.value)}}
-                        value={inputPassword} required/>
+                        id ="pass"
+                        onChange={handleChange}
+                        value={values.inputPassword}  required/>
                 </label>  <br />
 
                 
-                    <button onClick={submitNext} className="button-span">Next
+                    <button  className="button-span">Next
                     </button>
                 
 
