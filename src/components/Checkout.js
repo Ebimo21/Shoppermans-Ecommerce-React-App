@@ -108,12 +108,12 @@ function Checkout(){
                 <label>  <br />
                     <h2 className="checkout-font">Delivery Address <span className="checkout-span">*</span></h2>
 
-                    <textarea style={{marginBottom:"2em"}} className="input-box-this"
+                    <input style={{marginBottom:"2em"}} className="input-box-this"
                         placeholder =  "Enter your Delivery Address"
                         type="text"
                         onChange={(e)=>{setdeliveryAddress(e.target.value)}}
                         value={deliveryAddress} required>
-                </textarea>
+                </input>
                 
                 </label> 
             
