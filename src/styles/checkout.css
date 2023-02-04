@@ -1,3 +1,7 @@
+body{
+    background-color: white;
+    color: black;
+}
 
 
 @import url('https://fonts.googleapis.com/css2?family=BioRhyme&display=swap');
@@ -152,7 +156,6 @@ label{
     .checkout-container{
         display: flex;
         flex-direction: column;
-        
         padding: 0.2em;
         justify-content: center;
         align-items: center;
@@ -177,7 +180,7 @@ label{
         margin-top: 2em;
     }
     .input-box{
-        width: 100%;
+        width: 23.8em;
         height: 2.5em;
         padding-left: 1.2em;
         

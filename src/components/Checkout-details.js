@@ -12,13 +12,17 @@ import { useNavigate } from 'react-router-dom';
 import "../styles/checkout.css"
 
 
- 
+
 
 function CheckoutDetails(){
  let navigate = useNavigate()
   const {
     cartTotal,
   } = useCart()
+ 
+
+ 
+
  
 
   const [ cardNumber, setCardNumber ] = useState("")
@@ -123,7 +127,7 @@ function CheckoutDetails(){
 
                     <input style={{marginBottom:"2em"}} className="input-box"
                         placeholder =  "Card Expiry Date"
-                        type="text"
+                        type="date"
                         id ="expiry"
                         onChange={handleChange}
                         value={values.expiryDate}  required/>
