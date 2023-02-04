@@ -86,7 +86,7 @@ function Checkout(){
                     <h2 className="checkout-font">First Name<span className="checkout-span">*</span></h2>
                     <input 
                     style={{marginBottom:"2em"}} 
-                    className="input-box"
+                    className="input-box-a"
                         placeholder="Enter your First Name"
                         type="text"
                         onChange={(e)=>{setFirstName(e.target.value)}}
@@ -96,7 +96,7 @@ function Checkout(){
                 <label>  <br />
                     <h2 className="checkout-font">Last Name<span className="checkout-span">*</span></h2>
 
-                    <input style={{marginBottom:"2em"}} className="input-box"
+                    <input style={{marginBottom:"2em"}} className="input-box-a"
                         placeholder="Enter your Last Name"
                         type="text"
                         onChange={(e)=>{setLastName(e.target.value)}}
