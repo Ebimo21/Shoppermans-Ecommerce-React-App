@@ -8,14 +8,13 @@ import '../styles/cart.css'
 import { Link } from 'react-router-dom';
 import { useState } from 'react';
 import { useFormik } from "formik"
-import { useNavigate } from 'react-router-dom';
 import "../styles/checkout.css"
 
 
 
 
 function CheckoutDetails(){
- let navigate = useNavigate()
+
   const {
     cartTotal,
   } = useCart()
@@ -49,7 +48,7 @@ function CheckoutDetails(){
       setPassword(inputPassword)
       setdeliveryAddress(deliveryAddress)
       e.preventDefault()
-      navigate('/success')
+      
   }
 
 
