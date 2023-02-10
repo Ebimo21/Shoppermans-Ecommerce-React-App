@@ -143,6 +143,18 @@ label{
         font-size: 0.56em;
         border: 1px solid black; 
     }
+
+    .input-box-this-this{
+        width: 48em;
+        height: 4em;
+        color: black;
+        
+        border-radius: 0.4em;
+        margin-bottom: 0.5em;
+        padding-left: 1.3em;
+        font-size: 0.56em;
+        border: 1px solid black; 
+    }
     .div-cartt-two-two {
         background-color: white;
         width: 27em;
@@ -195,6 +207,18 @@ label{
         height: 6em;
         color: black;
         padding-top: 1em;
+        border-radius: 0.4em;
+        margin-bottom: 0.5em;
+        padding-left: 1.3em;
+        font-size: 0.56em;
+        border: 1px solid black; 
+    }
+
+    .input-box-this-this{
+        width:43em;
+        height: 4em;
+        color: black;
+        
         border-radius: 0.4em;
         margin-bottom: 0.5em;
         padding-left: 1.3em;

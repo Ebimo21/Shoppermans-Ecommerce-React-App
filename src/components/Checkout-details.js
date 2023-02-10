@@ -24,7 +24,7 @@ function CheckoutDetails(){
  
 
  
-
+  const [ deliveryAddress, setdeliveryAddress ] = useState("")
   const [ cardNumber, setCardNumber ] = useState("")
   const [ cvvName, setCvvName ] = useState("")
   const [ expiryDate, setExpiryDate ] = useState("")
@@ -47,6 +47,7 @@ function CheckoutDetails(){
       setCvvName(cvvName)
       setExpiryDate(expiryDate)
       setPassword(inputPassword)
+      setdeliveryAddress(deliveryAddress)
       e.preventDefault()
       navigate('/success')
   }
@@ -96,7 +97,18 @@ function CheckoutDetails(){
                 <h4 className="checkout-container-font-this"> Payment</h4>
             </div> 
             <form onSubmit= { submitNext }  style={{marginTop:"1em"}}>
-                <label>
+            <label>  <br />
+                    <h2 className="checkout-font">Card Number <span className="checkout-span">*</span></h2>
+
+                    <input style={{marginBottom:"2em"}} className="input-box-this-this"
+                        placeholder =  "Enter your Card Number"
+                        type="text"
+                        onChange={(e)=>{setdeliveryAddress(e.target.value)}}
+                        value={deliveryAddress} required>
+                </input>
+                
+                </label> 
+                {/* <label>
                     <h2 className="checkout-font">Card Number<span className="checkout-span">*</span></h2>
                     <input 
                     style={{marginBottom:"2em"}} 
@@ -106,7 +118,7 @@ function CheckoutDetails(){
                         id ="cardNumber"
                         onChange={handleChange}
                         value={values.cardNumber}  required />
-                </label>
+                </label> */}
             
                 <label>  <br />
                     <h2 className="checkout-font">Cvv<span className="checkout-span">*</span></h2>
